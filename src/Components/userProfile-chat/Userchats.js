@@ -21,6 +21,7 @@ function Userchats(props) {
   }
   getchatlist()
 
+  // console.log()
 
   return (
     <div>
@@ -30,17 +31,17 @@ function Userchats(props) {
             <div className='big-head-1'>Userchat</div>
             <div className="chat-list">
               { chats.length>0 ? <>
-                  {chats.map((chat) => {
+                  {chats.map((chat) => (
                      <Link style={{textDecoration: 'none'}} to={`/msgp2p/${chat.fuserid}`}>
-                     <div className="chat-single">
+                     <div className="chat-single" key={chat.id}>
                         <img src={chat.fprofpic} className='nav-profile-pic' />
                         <p>{chat.fusername}</p>
                       </div>
                      </Link>
-                  })}
+                  ))}
               </>
               :
-              <div>
+              <div> No Chats
                 </div>}
             </div>
         </div> :

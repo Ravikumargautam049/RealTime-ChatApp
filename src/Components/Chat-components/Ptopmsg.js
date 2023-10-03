@@ -77,6 +77,7 @@ function Ptopmsg(props) {
         console.log("Msg Not saved")
     });
   }
+  console.log(fuseruid)
 
   return (
     <div>
