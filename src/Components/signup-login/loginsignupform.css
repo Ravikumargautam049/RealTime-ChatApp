@@ -1,0 +1,43 @@
+.form-outermost {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+
+.form-outermost {
+    font-size: 50px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid #ffbb00;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form input {
+    width: 350px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #ffbb00;
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid #ffbb00;
+}
+
+form button {
+    color: #ffbb00;
+    border: 1px solid #ffbb00;
+}
